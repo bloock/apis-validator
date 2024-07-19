@@ -8,10 +8,10 @@ import { dateLocales, translations } from "./locales";
 const i18n = i18next.createInstance();
 
 i18n
-  .use(BrowserLanguageDetector)
+  // .use(BrowserLanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en",
+    fallbackLng: "es",
     debug: import.meta.env.NODE_ENV === "development",
     defaultNS: "translation",
     interpolation: {

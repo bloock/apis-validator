@@ -8,7 +8,6 @@ import { VerificationProvider } from "./providers/VerificationProvider";
 function App() {
   const styleToken: Partial<AliasToken> = {
     colorPrimary: import.meta.env.VITE_PRIMARY_COLOR || "#0084B8",
-    fontFamily: import.meta.env.VITE_FONT_FAMILY || "Montserrat, sans-serif",
   };
 
   const componentToken = {
@@ -31,6 +30,7 @@ function App() {
               : backgroundImage
           })`,
           backgroundRepeat: "no-repeat",
+          backgroundColor: import.meta.env.VITE_PRIMARY_COLOR,
         }}
       >
         <Header
@@ -38,7 +38,7 @@ function App() {
           style={{ height: 64, paddingInline: 50 }}
         >
           <img
-            className="py-8 px-4 z-0"
+            className="py-8 px-4 z-0 w-[200px]"
             src={
               import.meta.env.VITE_LOGO
                 ? import.meta.env.VITE_LOGO
