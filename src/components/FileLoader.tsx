@@ -132,7 +132,7 @@ function FileLoader() {
               </div>
             </Col>
             <Col lg={{ span: 16, order: 2 }} span={24} order={1}>
-              <div className="min-h-full flex flex-col justify-center mr-16 xs:items-center mr-0 lg:p-3 ">
+              <div className="min-h-full m-auto p-4 flex flex-col justify-center xs:items-center md:p-10 lg:mr-16  lg:p-3 ">
                 <h1
                   className="text-0 leading-14 text-white text-center xs:m-auto xs:items-center xs:p-5 my-8 lg:text-left mb-4 "
                   style={{
