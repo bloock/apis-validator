@@ -7,12 +7,15 @@ import "./init.ts";
 import "./styles/index.css";
 import "./styles/reset.css";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+    },
+  ],
+  { basename: import.meta.env.BASE_URL }
+);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
