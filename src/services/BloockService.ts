@@ -37,16 +37,9 @@ export default class BloockService {
     if (apiHost && apiHost.includes("api.bloock.dev")) {
       Bloock.setApiHost(apiHost);
 
-      Bloock.setProvider(Network.BLOOCK_CHAIN, "https://ganache.bloock.dev");
-      Bloock.setContractAddress(
-        Network.BLOOCK_CHAIN,
-        "d2d1BBcbee7741f8C846826F55b7c17fc5cf969a"
-      );
-
-      Bloock.setProvider(Network.ETHEREUM_GOERLI, "https://goerli.bloock.dev");
-      Bloock.setContractAddress(
-        Network.ETHEREUM_GOERLI,
-        "C8a9f5D79f94cbE4DA1171783F03976594b60c95"
+      Bloock.setProvider(
+        Network.ETHEREUM_SEPOLIA,
+        "https://sepolia.bloock.dev"
       );
     }
 
